@@ -8,6 +8,10 @@
 	"engines": {
 		"vscode": "^1.25.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bfitzpat/vscode-fuse.git"
+	},
 	"categories": [
 		"Other"
 	],
@@ -37,6 +41,14 @@
 			{
 				"command": "extension.sayHello",
 				"title": "List stuff"
+			},
+			{
+				"command": "extension.openDocsUrl",
+				"title": "openDocsUrl"
+			},
+			{
+				"command": "extension.openExtensionsUrl",
+				"title": "openExtsUrl"
 			}
 		]
 	},
@@ -55,8 +67,9 @@
 		"vscode": "^1.1.33"
 	},
 	"dependencies": {
-		"jsonc-parser": "^0.4.2",
+		"fetch": "^1.1.0",
 		"ftp": "^0.3.10",
+		"jsonc-parser": "^0.4.2",
 		"mkdirp": "^0.5.1",
 		"rimraf": "^2.6.2"
 	}

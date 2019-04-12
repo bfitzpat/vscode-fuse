@@ -6,24 +6,34 @@ Work in progress investigation into use of a Fuse specific "view" in VS Code.
 
 * Created simple "Fuse Dummy View" that provides three nodes in a view in the VS Code Side Bar.
 * Created simple "Fuse Explorer" with F inside circle icon in the Activity Bar that contains the Fuse Dummy View.
+* Set up the Fuse Documentation node to show a web view of the [Red Hat Fuse Getting Started Guide for Fuse 7.2](https://access.redhat.com/documentation/en-us/red_hat_fuse/7.2/html-single/getting_started/index)
+* Set up the FuseVS Code Extensions node to show a web view of the [Extension Pack for Apache Camel page in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=camel-tooling.apache-camel-extension-pack)
+* Hid the Fuse Quickstarts node for now
 
 Note: No parent/child relationship exists in these items at present, but we could certainly add that.
 
 ## Next steps
 
-* Link the Fuse Documentation node to [Red Hat Fuse - Docs and APIs](https://developers.redhat.com/products/fuse/docs-and-apis/) - using a WebView to show the documentation inside VS Code.
-* Link the Fuse VS Code Extensions node to [Extension Pack for Apache Camel](https://marketplace.visualstudio.com/items?itemName=camel-tooling.apache-camel-extension-pack) - provide an action to possibly install this and/or test to see if it's already installed and update the label accordingly?
-* Remove/hide the Fuse Quickstarts node for now? Don't want to step on the [Project Initializer by Red Hat extension](https://marketplace.visualstudio.com/items?itemName=redhat.project-initializer) since we are working to improve that for use with Fuse/Camel examples
+* Possible - Provide an action to possibly install the Camel Extension Pack and/or test to see if it's already installed and update the label accordingly?
+* Question - What can we do with Fuse Quickstarts? Don't want to step on the [Project Initializer by Red Hat extension](https://marketplace.visualstudio.com/items?itemName=redhat.project-initializer) since we are working to improve that for use with Fuse/Camel examples
 
 ## Current screen shots
 
-### Dummy View included in main Side Bar
+### Dummy View with Docs page open
 
-![Dummy View](media/dummy-view.gif)
+![Dummy View with icon in Activity Bar](media/dummy-view-docs-page-getting-started.gif)
+
+### Dummy View with Extensions page open
+
+![Dummy View with icon in Activity Bar](media/dummy-view-exts-page.gif)
 
 ### Dummy View in Activity Bar
 
 ![Dummy View with icon in Activity Bar](media/dummy-view-with-activity-bar-icon.gif)
+
+### Dummy View included in main Side Bar
+
+![Dummy View](media/dummy-view.gif)
 
 ## Resources
 

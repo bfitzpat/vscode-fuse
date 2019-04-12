@@ -16,11 +16,20 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"views" : {
-			"explorer" : [
+		"viewsContainers": {
+			"activitybar": [
 				{
-					"id":"nodeOutline",
-					"name":"Fuse Dummy View"
+					"id": "fuse-explorer",
+					"title": "Fuse Explorer",
+					"icon": "media/f-inside-a-circle.svg"
+				}
+			]
+		},
+		"views": {
+			"fuse-explorer": [
+				{
+					"id": "nodeOutline",
+					"name": "Fuse Dummy View"
 				}
 			]
 		},

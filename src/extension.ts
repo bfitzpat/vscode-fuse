@@ -1,14 +1,27 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import { NodeProvider } from './NodeProvider';
+import { BaseNodeProvider } from './BaseNodeProvider';
+import { FuseDummyNodeProvider } from './FuseDummyViewProvider';
+import { FuseProjectExplorerNodeProvider } from './FuseProjectExplorerViewProvider';
+import { FuseServersNodeProvider } from './FuseServersViewProvider';
 
 export async function activate(context: vscode.ExtensionContext) {
 
-	const nodeProvider = new NodeProvider(context);
+	const nodeProvider = new FuseDummyNodeProvider(context);
 	vscode.window.registerTreeDataProvider('nodeOutline', nodeProvider);
 
+	const projectExplorer = new FuseProjectExplorerNodeProvider(context);
+	vscode.window.registerTreeDataProvider('fuseProjectExplorer', projectExplorer);
+
+	const serverExplorer = new FuseServersNodeProvider(context);
+	vscode.window.registerTreeDataProvider('fuseServerExplorer', serverExplorer);
+
+	const springBootExplorer = new BaseNodeProvider(context);
+	vscode.window.registerTreeDataProvider('springBootDashboard', springBootExplorer);
+
 	vscode.commands.registerCommand('extension.openDocsUrl', url => {
+
 		// Create and show a new webview
 		const fusepanel = vscode.window.createWebviewPanel(
 			'fuseDocs', // Identifies the type of the webview. Used internally

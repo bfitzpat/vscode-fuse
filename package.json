@@ -33,7 +33,19 @@
 			"fuse-explorer": [
 				{
 					"id": "nodeOutline",
-					"name": "Fuse Dummy View"
+					"name": "Fuse Launchpad"
+				},
+				{
+					"id": "fuseProjectExplorer",
+					"name": "Fuse Project Explorer"
+				},
+				{
+					"id": "fuseServerExplorer",
+					"name": "Fuse Server Explorer"
+				},
+				{
+					"id": "springBootDashboard",
+					"name": "Spring-Boot Dashboard"
 				}
 			]
 		},

@@ -19,6 +19,10 @@ Note: No parent/child relationship exists in these items at present, but we coul
 
 ## Current screen shots
 
+### Fuller Fuse Dashboard idea with Docs page open
+
+![Dummy View with icon in Activity Bar](media/Fuse-dashboard-mockup-22-APR-2019.gif)
+
 ### Dummy View with Docs page open
 
 ![Dummy View with icon in Activity Bar](media/dummy-view-docs-page-getting-started.gif)

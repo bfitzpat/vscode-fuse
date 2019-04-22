@@ -9,8 +9,34 @@ Work in progress investigation into use of a Fuse specific "view" in VS Code.
 * Set up the Fuse Documentation node to show a web view of the [Red Hat Fuse Getting Started Guide for Fuse 7.2](https://access.redhat.com/documentation/en-us/red_hat_fuse/7.2/html-single/getting_started/index)
 * Set up the FuseVS Code Extensions node to show a web view of the [Extension Pack for Apache Camel page in the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=camel-tooling.apache-camel-extension-pack)
 * Hid the Fuse Quickstarts node for now
+* Created a fuller "dashboard" concept containing a project view, a server view, and the spring-boot view.
 
 Note: No parent/child relationship exists in these items at present, but we could certainly add that.
+
+### Fuse Dashboard Notes
+
+Some of these options are available in our Classic Eclipse tooling and might be helpful in the context of a VS Code workbench. Possible activities useful to a user in a Fuse Dashboard in VS Code might include...
+
+![Fuse Dashboard](media/Fuse-dashboard-mockup-focus.gif)
+
+#### Fuse Project Explorer
+
+* Show outline of any Fuse/Camel configurations discovered in the project (spring, blueprint, java)
+* Enable one click open of any Fuse/Camel configuration
+* Enable exploration and management (add/remove) dependencies - possibly validation of dependencies to see if any are used/not used
+
+#### Fuse Server Explorer (needed?)
+
+* Show list of configured Fuse standalone servers
+* Enable deployment of Fuse Project to configured server
+* Enable start/stop
+* Enable way to show server console
+
+#### Spring Boot Explorer
+
+* Show list of configured Spring Boot servers. Potentially reuse Spring Boot Dashboard view from https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard
+
+Note: Would be nice if we could embed views from other activities in our activity, reusing content. I asked this question https://stackoverflow.com/questions/55716615/created-my-own-viewscontainer-can-i-include-views-from-other-viewscontainers and the answer is "not yet" - new issue now for VS Code upstream https://github.com/Microsoft/vscode/issues/72453 - also contributed additional comments/questions to that issue
 
 ## Next steps
 

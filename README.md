@@ -19,6 +19,12 @@ Some of these options are available in our Classic Eclipse tooling and might be 
 
 ![Fuse Dashboard](media/Fuse-dashboard-mockup-focus.gif)
 
+#### Fuse Launchpad
+
+* Provide links to Fuse docs
+* Possibly provide links to other useful Fuse/Camel VS Code Extensions?
+* Possibly provide some sort of quickstart explorer that could be used to quickly clone projects from github to give users a starting point?
+
 #### Fuse Project Explorer
 
 * Show outline of any Fuse/Camel configurations discovered in the project (spring, blueprint, java)
@@ -36,12 +42,15 @@ Some of these options are available in our Classic Eclipse tooling and might be 
 
 * Show list of configured Spring Boot servers. Potentially reuse Spring Boot Dashboard view from https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard
 
-Note: Would be nice if we could embed views from other activities in our activity, reusing content. I asked this question https://stackoverflow.com/questions/55716615/created-my-own-viewscontainer-can-i-include-views-from-other-viewscontainers and the answer is "not yet" - new issue now for VS Code upstream https://github.com/Microsoft/vscode/issues/72453 - also contributed additional comments/questions to that issue
-
 ## Next steps
 
+* What do we want the Fuse “icon” to be? We really don’t have one at this time (unlike the OpenShift project, etc.).
+* What else do we want to include in this collection? OpenShift Application Explorer from the OpenShift Activity? 
+* Servers view in flight? - [VS Code Adapters](https://github.com/redhat-developer/vscode-adapters)
 * Possible - Provide an action to possibly install the Camel Extension Pack and/or test to see if it's already installed and update the label accordingly?
 * Question - What can we do with Fuse Quickstarts? Don't want to step on the [Project Initializer by Red Hat extension](https://marketplace.visualstudio.com/items?itemName=redhat.project-initializer) since we are working to improve that for use with Fuse/Camel examples
+
+Note: Would be nice if we could embed views from other activities in our activity, reusing content. I asked this question https://stackoverflow.com/questions/55716615/created-my-own-viewscontainer-can-i-include-views-from-other-viewscontainers and the answer is "not yet". Opened new issue now for VS Code upstream https://github.com/Microsoft/vscode/issues/72453 - also contributed additional comments/questions to that issue.
 
 ## Current screen shots
 
